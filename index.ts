@@ -1,2 +1,2 @@
-import './src/WcRoughNotation';
-import './src/WcRoughNotationGroup';
+import './src/WcRoughNotation.js';
+import './src/WcRoughNotationGroup.js';

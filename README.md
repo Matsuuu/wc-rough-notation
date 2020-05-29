@@ -2,6 +2,8 @@
 
 A Web Component port of the popular [Rough Notation](https://github.com/pshihn/rough-notation) libary.
 
+[CodeSandbox](https://codesandbox.io/embed/strange-jang-14utm?fontsize=14&hidenavigation=1&theme=dark)
+
 ### Usage
 
 ```html
