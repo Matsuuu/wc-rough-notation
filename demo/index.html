@@ -47,6 +47,24 @@
       show()
     </button>
 
+    <wc-rough-notation-group id="group-to-show">
+      <wc-rough-notation type="highlight" color="lightyellow" order="3">
+        <h2>Rough notation group</h2>
+      </wc-rough-notation>
+
+      <wc-rough-notation type="underline" color="green" order="1">
+        <p>By wrapping multiple rough notation elements into a group,</p>
+      </wc-rough-notation>
+
+      <wc-rough-notation order="2">
+        <p>you can show them in animating in order</p>
+      </wc-rough-notation>
+    </wc-rough-notation-group>
+
+    <button onclick="document.querySelector('#group-to-show').show()">
+      group.show()
+    </button>
+
     <script type="module" src="../dist/index.js"></script>
   </body>
 </html>

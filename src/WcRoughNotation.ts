@@ -31,13 +31,14 @@ export default class WcRoughNotation extends LitElement {
   @property({ type: Boolean })
   showOnLoad = false;
 
+  @property({ type: Number })
+  order = 0;
+
   firstUpdated() {
     const slotElements = this.shadowRoot
       ?.querySelector('slot')
       ?.assignedNodes()
       ?.filter(node => node instanceof HTMLElement);
-
-    console.log(this.noAnimation);
 
     slotElements?.forEach(se => {
       this.annotation = annotate(se as HTMLElement, {
