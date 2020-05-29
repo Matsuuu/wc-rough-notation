@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html {
+        font-size: 18px;
+      }
+      body {
+        background: #fafafa;
+      }
+      h2,
+      p {
+        font-weight: 300;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <wc-rough-notation showOnLoad type="highlight" color="#FF6d00">
+      <h2>WC Rough Notation</h2>
+    </wc-rough-notation>
+    <wc-rough-notation showOnLoad>
+      <p>
+        This is a small wrapper for the coolest of js libraries: Rough Notation
+      </p>
+    </wc-rough-notation>
+
+    <p>
+      Animations are displayed automatically when the flag
+      <wc-rough-notation showOnLoad color="green"
+        ><span>showOnLoad</span></wc-rough-notation
+      >
+      is set
+    </p>
+
+    <wc-rough-notation id="show-on-button" type="box" strokeWidth="3">
+      <p>
+        They can also be launched programmatically by calling the
+        <wc-rough-notation showOnLoad type="box" color="blue"
+          ><span>show()</span></wc-rough-notation
+        >
+        method.
+      </p>
+    </wc-rough-notation>
+    <button onclick="document.querySelector('#show-on-button').show()">
+      show()
+    </button>
+
+    <script type="module" src="../dist/index.js"></script>
+  </body>
+</html>
